@@ -5,8 +5,8 @@ i = 1
 while True:
   exec("Jit" + i + " = worksheet.acell(" + i.string.ascii_uppercase.index(i - 1).value + "2)")
   i += 1
-confirmation_of_jitsus = input("Is it correct that you have #@, #@, #@, #@, #@, #@, #@ as your ttjitsus? Y/N").format(Jit1, Jit2, Jit3, Jit4, Jit5, Jit6, Jit7)
-try:
+confirmation_of_jitsus = input("Is it correct that you have {}, {}, {}, {}, {}, {}, {} as your ttjitsus? Y/N".format(Jit1, Jit2, Jit3, Jit4, Jit5, Jit6, Jit7)
+try:)
   if confirmation_of_jitsus == Y
     worksheet.update.acell("Ready")
   elif confirmation_of_jitsus == N
