@@ -1,6 +1,8 @@
-from InitGSpread import *
+import random
 
-initGSpread()
+import gspread
+
+from oauth2client.service_account import ServiceAccountCredentials
 
 def ChatOverGSLow(name, Pasword):
 
