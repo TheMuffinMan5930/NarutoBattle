@@ -8,3 +8,5 @@ Credit:
 E, C, B, N, W...
 
 Make main changes in `main.py` and changes to functions related to specific things in a separate file.
+
+Please make most of the common functions in the common.py which will be created soon. 
