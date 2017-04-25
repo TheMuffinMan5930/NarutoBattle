@@ -6,3 +6,5 @@ Uses one other github project linked here:
 https://github.com/burnash/gspread
 Credit:
 E, C, B, N, W...
+
+Make main changes in `main.py` and changes to functions related to specific things in a separate file.
