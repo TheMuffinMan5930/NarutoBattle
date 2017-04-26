@@ -38,8 +38,8 @@ def NewPlayer(Player_Name, Level, AfinityList, Other):
     print("To change any of these stats, you may access the dictionary storing this info by using these keywords:")
     print('"Name", "Strength", "Agility", "Perception", "Chakra", "Hp", "Afinity", or "Other"')
           
-    return {"Name": Player_Name, "Strength": BaseStrength, "Agility": BaseAgility, "Perception": BasePerception, "Chakra": BaseChakra, "Hp": BaseHp, "Afinity": AfinityList, "Other": Other}
-
+    playerVar = {"Name": Player_Name, "Strength": BaseStrength, "Agility": BaseAgility, "Perception": BasePerception, "Chakra": BaseChakra, "Hp": BaseHp, "Afinity": AfinityList, "Other": Other}
+    
     # When you learn about classes, this can be replaced with a global variable
 
 
@@ -59,5 +59,17 @@ def NewPlayer(Player_Name, Level, AfinityList, Other):
 # use this instead of updating that other code, just create a new subrutine
 
 def UploadPlayer(playerVar):
-   wsPlayers.update_cell(2, 2, "hi")
+   sh.get_worksheet(0)
+   i = 1
+   While True:
+      wsPlayers.update_acell(1 , 2 + i, Player_Name)
+      wsPlayers.update_acell(2 , 2 + i, BaseStrength)
+      wsPlayers.update_acell(3 , 2 + i, BaseAgility)
+      wsPlayers.update_acell(4 , 2 + i, BasePerception)    
+      wsPlayers.update_acell(5 , 2 + i, BaseChakra)
+      wsPlayers.update_acell(6 , 2 + i, BaseHp)
+      wsPlayers.range.update_acell('H2:L2', AffinityList)
+      Password = input("What would you like to set as your password?")
+      wsPlayers.update_acell
+      i += 1
    
