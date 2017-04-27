@@ -16,23 +16,23 @@ wsPlayers = shFLFL.worksheet("Players_&_Stats")
 
 
 
-def NewPlayer(Player_Name, Level, AfinityList, Password):
+def NewPlayer(Player_Name, Level, AffinityList, Password):
    
 
  
 class Person(Object): # Move to person.py
-   def __init__(self):
-      BaseStrength = random.randint(1 + Level, 6 * Level) #self.Basestrength
-      BaseAgility = random.randint(1 + Level, 6 * Level)
-      BasePerception = random.randint(1 + Level, 6 * Level)
-      BaseChakra = random.randint(15 * Level, 30 * Level)
-      BaseHp = random.randint(15 * Level, 30 * Level)
+   def __init__(self, Player_Name, Level, AffinityList, Password):
+      self.BaseStrength = random.randint(1 + Level, 6 * Level)
+      self.BaseAgility = random.randint(1 + Level, 6 * Level)
+      self.BasePerception = random.randint(1 + Level, 6 * Level)
+      self.BaseChakra = random.randint(15 * Level, 30 * Level)
+      self.BaseHp = random.randint(15 * Level, 30 * Level)
       self.name = Player_Name
       self.Level = Level
-      self.AfinityList = AfinityList
+      self.AffinityList = AffinityList
       self.Password = Password
-   def __str__(self):
-      return {"Name": Player_Name, "Strength": BaseStrength, "Agility": BaseAgility, "Perception": BasePerception, "Chakra": BaseChakra, "Hp": BaseHp, "Afinity": AfinityList, "Password": Password}
+   #def __str__(self): # This code won't work and you probably don't need it.
+   #   return {"Name": Player_Name, "Strength": BaseStrength, "Agility": BaseAgility, "Perception": BasePerception, "Chakra": BaseChakra, "Hp": BaseHp, "Afinity": AfinityList, "Password": Password}
    
 print("To change any of these stats, you may access the dictionary storing this info by using these keywords:")
     print('"Name", "Strength", "Agility", "Perception", "Chakra", "Hp", "Afinity", or "Other"')
