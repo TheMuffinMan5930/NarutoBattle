@@ -19,10 +19,10 @@ wsPlayers = shFLFL.worksheet("Players_&_Stats")
 def NewPlayer(Player_Name, Level, AfinityList, Password):
    
 
-
-class Person(Player_Name, Level, AfinityList, Password):
+ 
+class Person(Object): # Move to person.py
    def __init__(self):
-      BaseStrength = random.randint(1 + Level, 6 * Level)
+      BaseStrength = random.randint(1 + Level, 6 * Level) #self.Basestrength
       BaseAgility = random.randint(1 + Level, 6 * Level)
       BasePerception = random.randint(1 + Level, 6 * Level)
       BaseChakra = random.randint(15 * Level, 30 * Level)
