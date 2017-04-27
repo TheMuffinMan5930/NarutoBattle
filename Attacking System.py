@@ -16,10 +16,14 @@ except:
 # this is just the code I CAN do.
 class Attack(object)
 	def __init__(self)
-		self.range = wsJitsus.cell( , ,.val)#blah, Blah plus syntax check for 19 - 22ish
-		self.damage
-		self. #other attributes
-		self.
+		self.coordinates_of_Jitsu = wsJitsus.cell( : , :)
+		self.range = wsJitsus.cell( , ,)#blah, Blah plus syntax check for 19 - 22ish
+		self.damage = wsJitsus.cell( , ,)
+		self.chakra_cost = wsJitsus.cell( , ,) #other attributes
+		self.aim = wsJitsus.cell( , ,)
+		self.Jitsu_Name = wsJitsus.cell( , ,)
+		self.purchase_cost = wsJitsus.cell( , ,)
+		self.Jitsu_Rank = wsJitsus.cell( , ,)
 	def __str__(self)
 		return(Your Jitsu has {}d).format(Jitsu)
     
