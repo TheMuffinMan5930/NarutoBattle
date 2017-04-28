@@ -31,9 +31,7 @@ class Person(Object): # Move to person.py
       self.Level = Level
       self.AffinityList = AffinityList
       self.Password = Password
-   #def __str__(self): # This code won't work and you probably don't need it.
-   #   return {"Name": Player_Name, "Strength": BaseStrength, "Agility": BaseAgility, "Perception": BasePerception, "Chakra": BaseChakra, "Hp": BaseHp, "Afinity": AfinityList, "Password": Password}
-   
+      
 print("To change any of these stats, you may access the dictionary storing this info by using these keywords:")
     print('"Name", "Strength", "Agility", "Perception", "Chakra", "Hp", "Afinity", or "Other"')
           
