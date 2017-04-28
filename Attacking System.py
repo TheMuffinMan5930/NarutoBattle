@@ -5,9 +5,9 @@ i = 1
 while True:
   exec("Jit" + i + " = worksheet.acell(" + i.string.ascii_uppercase.index(i - 1).value + "2)")
   i += 1
-confirmation_of_jitsus = input("Is it correct that you have {}, {}, {}, {}, {}, {}, {} as your ttjitsus? Y/N".format(Jit1, Jit2, Jit3, Jit4, Jit5, Jit6, Jit7)
+confirmation_of_jitsus = input("Is it correct that you have {}, {}, {}, {}, {}, {}, {} as your ttjitsus? Y/N".format(Jit1, Jit2, Jit3, Jit4, Jit5, Jit6, Jit7))
 if confirmation_of_jitsus == Y
-    worksheet.update.acell("Ready")
+    worksheet.update.cell("Ready")
 elif confirmation_of_jitsus == N
     QuitGame() # Def this aswell 
 except:
@@ -25,5 +25,5 @@ class Attack(object)
 		self.purchase_cost = wsJitsus.cell( , ,)
 		self.Jitsu_Rank = wsJitsus.cell( , ,)
 	def __str__(self)
-		return(Your Jitsu has {}d).format(Jitsu)
+		return("Your Jitsu has {}d".format(Jitsu))
     

@@ -1,1 +1,1 @@
-import https://github.com/TheMuffinMan5930/NarutoBattle/
+from https://github.com/TheMuffinMan5930/NarutoBattle/ import *

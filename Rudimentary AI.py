@@ -5,3 +5,19 @@
 # the ninjas take turns, each turn being logged, and the subsequent NOT global variables for their max health ect. 
 # each turn is logged into file and winner is saved into file, with all stats. 
 # while statement procedurely adds to number of ninjas with a while ... +1 to the number of ninjas. Each ninja has a higher number, 01, 02, 03 and so on.
+i = 2
+while i > 1:
+    Ninja_(i) = AI_Ninjas(object)
+class AI_Ninjas(object):
+    def __init__(self):
+            self.BaseStrength = random.randint(1 + Level, 6 * Level)
+            self.BaseAgility = random.randint(1 + Level, 6 * Level)
+            self.BasePerception = random.randint(1 + Level, 6 * Level)
+            self.BaseChakra = random.randint(15 * Level, 30 * Level)
+            self.BaseHp = random.randint(15 * Level, 30 * Level)
+            self.jitsus = jitsus_for_(i)
+    def __str__(self):s
+    print(self.name)
+    i += 1
+    
+
