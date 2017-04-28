@@ -24,6 +24,4 @@ class Attack(object)
 		self.Jitsu_Name = wsJitsus.cell( , ,)
 		self.purchase_cost = wsJitsus.cell( , ,)
 		self.Jitsu_Rank = wsJitsus.cell( , ,)
-	def __str__(self)
-		return(Your Jitsu has {}d).format(Jitsu)
-    
+
