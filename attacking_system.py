@@ -24,6 +24,10 @@ class Attack(object)
 		self.Jitsu_Name = wsJitsus.cell( , ,)
 		self.purchase_cost = wsJitsus.cell( , ,)
 		self.Jitsu_Rank = wsJitsus.cell( , ,)
+<<<<<<< HEAD:Attacking System.py
 	def __str__(self)
 		return("Your Jitsu has {}d".format(Jitsu))
     
+=======
+
+>>>>>>> 7723f44702a9a1e3e4c3431c136d1ad136bda8c4:attacking_system.py
